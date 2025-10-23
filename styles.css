@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-left h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #50fa7b; /* green accent */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #8be9fd; /* blue accent */
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #f1fa8c; /* yellow hover */
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #50fa7b;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #8be9fd;
+}
+
+/* Cheatsheets grid */
+.cheatsheets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  width: 160px;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0 0 6px rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.15);
+}
+
+.card i {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card.red i, .card.red h3 { color: #ff5555; }
+.card.green i, .card.green h3 { color: #50fa7b; }
+.card.yellow i, .card.yellow h3 { color: #f1fa8c; }
+.card.blue i, .card.blue h3 { color: #8be9fd; }
+
+/* Cheatsheet content */
+.cheatsheet {
+  background-color: #111;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px auto;
+  width: 80%;
+  max-width: 1000px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+.cheatsheet h2 {
+  color: #50fa7b;
+  font-size: 36px;
+}
+
+.cheatsheet-section {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cheatsheet-section h3 {
+  color: #8be9fd;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cheatsheet-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cheatsheet-section li {
+  margin-bottom: 8px;
+  color: #f1fa8c;
+}
+
+code {
+  background-color: #000;
+  color: #50fa7b;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #000;
+  color: #50fa7b;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+}

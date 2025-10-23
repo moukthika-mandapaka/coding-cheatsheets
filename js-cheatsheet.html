@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Cheatsheet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>Code Companions</h1>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Resources (TBD)</a>
+    </div>
+  </nav>
+
+  <section class="cheatsheet">
+    <h2><i class="fa-brands fa-js"></i> JavaScript Cheatsheet</h2>
+    <p>Essential JavaScript syntax and features at a glance.</p>
+
+    <div class="cheatsheet-section">
+      <h3>Variables</h3>
+      <pre><code>let x = 10;
+const y = 20;
+var z = x + y;</code></pre>
+    </div>
+
+    <div class="cheatsheet-section">
+      <h3>Functions</h3>
+      <pre><code>function greet(name) {
+  return "Hello " + name;
+}
+
+const greetArrow = (name) => `Hi ${name}`;</code></pre>
+    </div>
+
+    <div class="cheatsheet-section">
+      <h3>Arrays & Objects</h3>
+      <pre><code>const arr = [1, 2, 3];
+arr.push(4);
+
+const obj = { name: "Krina", lang: "JS" };
+console.log(obj.name);</code></pre>
+    </div>
+
+    <div class="cheatsheet-section">
+      <h3>DOM Manipulation</h3>
+      <pre><code>document.querySelector("h1").style.color = "blue";
+document.getElementById("btn").addEventListener("click", () => alert("Hi!"));</code></pre>
+    </div>
+  </section>
+</body>
+</html>
